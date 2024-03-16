@@ -1,0 +1,88 @@
+*{
+    color: white;
+    background-color: black;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title-container{
+    text-align: center;
+}
+
+nav > p{
+    text-align: center;
+}
+
+.nav-container{
+    text-align: center;
+}
+
+button:hover{
+    scale: 1.2;
+    transition: 0.5s;
+    box-shadow:0 0 25px lightblue;
+}
+
+button{
+    border-radius: 20px;
+    border-color: white;
+    margin-bottom: 1%;
+}
+
+hr{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.images{
+    display: flex;
+    gap: 0.3%;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+img{
+    width: auto;
+    height: 20vw;
+    border-radius: 2px;
+    border: 2px white solid;
+}
+
+img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow:0 0 25px lightblue;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.lightbox-img{
+    display: block;
+    margin: 50px auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width:1000px){
+    *{
+        font-size: 50px;
+    }
+
+    .lightbox-img{
+        display: block;
+        margin-top: 40%;
+        margin-left: 40%;
+        scale: 3;
+    }
+}

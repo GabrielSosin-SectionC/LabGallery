@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="lab9.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Gallery</h1>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <p>Click one of the buttons to filter images:</p>
+        <div class="nav-container">
+            <button data-category="all" class="filter">ALL</button>
+            <button data-category="dog" class="filter">DOGS</button>
+            <button data-category="cat" class="filter">CATS</button>
+            <button data-category="turtle" class="filter">TURTLES</button>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <div class="images">
+            <div class="image cat">            
+                <img src="https://imgs.search.brave.com/vtdP4ktsQ5kSCUn0nrVow1nfm62GCbuC6vU2S3LL_Xc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzg1Lzll/LzA3Lzg1OWUwNzJh/YzA3ZTIzN2FlMjYx/NDhkZjY3ZWRlMTI0/LmpwZw" alt="Cat Weird">
+            </div>
+            <div class="image cat">            
+                <img src="https://imgs.search.brave.com/O4VoYcssQdVeF91tfkXaBvSWQGZi2tChAXVXQFL_8EU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/c3BvdHRlZC1zY3J1/bmdlLWluLWNhdC1j/YWZlLXYwLXg2bjFk/azhwNWJiYzEuanBl/Zz93aWR0aD02NDAm/Y3JvcD1zbWFydCZh/dXRvPXdlYnAmcz05/NzRiOTZlZjFkNGNk/ZTI5MGMzOTFjZTE3/OGQ4MTY4NmRlNTJk/ZGJh" alt="Also weird cat"> 
+            </div>
+            <div class="image cat">            
+                <img src="https://imgs.search.brave.com/7yaDTI0Wt_PkFcIqBtulIXd54UOgWJPzj-b394SazzM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDM4NTI3ODYtMWNm/NjYyNGI5OTg3P3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4Tm54OFpuVnVi/bmtsTWpCallYUjha/VzU4TUh4OE1IeDhm/REE9" alt="meow">
+            </div>
+            <div class="image dog">            
+                <img src="https://imgs.search.brave.com/CFhwruWkaL91po1X46a08NnRaV53mVW6xlKUlD3iN90/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODM1MTI2MDM4MDUt/M2NjNmI0MWYzZWRi/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TWpCOGZH/WjFibTU1SlRJd1pH/OW5mR1Z1ZkRCOGZE/QjhmSHd3" alt="bark">
+            </div>
+            <div class="image dog">            
+                <img src="https://imgs.search.brave.com/10zQvaaxo61vUVZxHh5CbMScfo_v0PSa3cvo-9fIr9o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y4LzRj/LzlhL2Y4NGM5YWRh/MDI5MGYxNDRmMTQw/ZTJiZjE1ZGQ3ZmIw/LmpwZw" alt="bark">
+            </div>
+            <div class="image dog">            
+                <img src="https://imgs.search.brave.com/xVsUbw0Xrs_HrPa6Eur0lWVdnsKejhyNoEV8Ud5GXJc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/YnV6emZlZWQuY29t/L2J1enpmZWVkLXN0/YXRpYy9zdGF0aWMv/MjAyMy0wOC8yLzIy/L2Fzc2V0L2U3OTZj/ZjI4N2I5Yi9zdWIt/YnV6ei0zMzkxLTE2/OTEwMTQ2NzUtMS5q/cGc_ZG93bnNpemU9/NzAwOiomb3V0cHV0/LXF1YWxpdHk9YXV0/byZvdXRwdXQtZm9y/bWF0PWF1dG8" alt="dog dog dog">
+            </div>
+            <div class="image dog">            
+                <img src="https://imgs.search.brave.com/zOVb7mrIsabhm8Mz3zuX6LCKvQ_5KKE1hhbBqxfi14s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NzU0MjUxODY3NzUt/YjhkZTlhNDI3ZTY3/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OFpu/VnVibmtsTWpCa2Iy/ZDhaVzU4TUh4OE1I/eDhmREE9.jpeg" alt="dogdog">
+            </div>
+            <div class="image turtle">            
+                <img src="https://imgs.search.brave.com/WtpNeD-WgKj8WtwFCj1aSZPSeMH-6Cu4tS66sRnrGYg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzk2LzU0/L2IzLzk2NTRiMzYw/NTk5OGI1NDUxNDAw/YmUzMDM4N2MwNGFj/LmpwZw" alt="turtle">
+            </div>
+            <div class="image turtle">            
+                <img src="https://imgs.search.brave.com/Zc4HQ_vtoW_5UiZJ5W71hawHdpTCJKQSNCYYXsDEAOk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzI3L2Mz/L2M5LzI3YzNjOTE0/NDgxMWFlODcyNzk5/ODEyN2NmYmE4Yzkx/LmpwZw" alt="turtle again">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="lightbox">
+        <img class="lightbox-img" src="" alt="">
+    </div>
+</body>
+<script src="lab9.js"></script>
+</html>
